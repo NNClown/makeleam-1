@@ -10,24 +10,26 @@
     <title>makeleam-1</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div class="form bg-secondary container">
+    
+    <div class="form-container" style="background-color: gray;">
         <div class="form-group">
-            <label for="text1">Text:</label>
-            <input type="text" id="text1" class="form-control">
+            <label class="text">名前</label>
+            <input type="email" id="name" class="form-control">
         </div>
         <div class="form-group">
-            <label for="text1">Text:</label>
-            <input type="text" id="text1" class="form-control">
+            <label class="text">メールアドレス</label>
+            <input type="email" id="email" class="form-control">
         </div>
         <div class="form-group">
-            <label for="text1">Text:</label>
-            <input type="text" id="text1" class="form-control">
+            <label class="text">内容</label>
+            <input type="email" id="content" class="form-control">
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="check1a" checked>
-            <label class="form-check-label" for="check1a">Check A</label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"> プライバシーポリシーに同意する
+            </label>
           </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">送信</button>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
