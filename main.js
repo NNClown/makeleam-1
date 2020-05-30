@@ -9,3 +9,12 @@ var funcinputnum = function() {
             document.getElementById("submitbtn").classList.add("is-invalid");
         }
 }
+var funcPolicy = function () {
+    var ch = document.getElementById("id_Policy").checked;
+    if(ch == true){
+        document.getElementById("submitbtn").disabled = false;
+    }
+    else{
+        document.getElementById("submitbtn").disabled = true;
+    }    
+}
