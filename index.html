@@ -10,27 +10,30 @@
     <title>makeleam-1</title>
   </head>
   <body>
-    
-    <div class="form-container" style="background-color: gray;">
+    <script src="main.js"></script>
+    <div class="form-container" style="background-color: whitesmoke;">
+      <form id="id_form">
         <div class="form-group">
-            <label class="text">名前</label>
-            <input type="email" id="name" class="form-control">
+            <label class="name_text">名前</label>
+            <input type="text" id="id_name"class="form-control">
         </div>
         <div class="form-group">
-            <label class="text">メールアドレス</label>
-            <input type="email" id="email" class="form-control">
+            <label class="email_text">メールアドレス</label>
+            <input type="email" id="id_email" class="form-control">
         </div>
         <div class="form-group">
-            <label class="text">内容</label>
-            <input type="email" id="content" class="form-control">
+            <label class="content_text">内容</label>
+            <input type="text" id="id_content" class="form-control">
         </div>
           <div class="checkbox">
             <label>
               <input type="checkbox" value="remember-me"> プライバシーポリシーに同意する
             </label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">送信</button>
-    </div>
+          <button class="btn btn-lg btn-primary btn-block is-valid" type="submit" onclick="funcinputnum()" id="submitbtn">送信</button>
+          <div class="invalid-feedback">未入力箇所があります。</div>
+        </form>
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
